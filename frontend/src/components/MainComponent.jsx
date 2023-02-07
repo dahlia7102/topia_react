@@ -6,6 +6,10 @@ class MainComponent extends Component {
         this.state = {
             message: ""
         }
+
+        this.state = {
+            data: ""
+        }
     }
 
     componentDidMount() {
@@ -15,9 +19,15 @@ class MainComponent extends Component {
     getApi = () => {
         axios.get("/api/hello")
             .then(res => {
-                console.log(res);
+                console.log(res.data.message);
+                console.log(res.data);
+                let dataArr = [];
+                let testData = [];
+                dataArr.push(res.data.message);
+
                 this.setState({
-                    message: res.data.message
+                    message: res.data.message ,
+                    data: res.data.data[0].COMMENTS 
                 });
             }).catch(console.error);
     }
@@ -26,7 +36,8 @@ class MainComponent extends Component {
         return (
             <div>
                 Main 페이지<br />
-                서버로부터 온 메시지: {this.state.message}
+                message : {this.state.message}<br/>
+                Data : {this.state.data}
             </div>
         );
     }

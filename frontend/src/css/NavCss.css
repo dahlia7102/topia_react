@@ -1,0 +1,276 @@
+#header {
+	position: relative;
+	width: 100%;
+	background-color: #002b45;
+	height: 90px;
+}
+
+.navlink {
+	width: 20px;
+}
+
+.nav {
+	width: 190%;
+	margin-left: 300px;
+}
+
+#header .nav a {
+	/* margin:0 auto; */
+	overflow: hidden;
+	display: block;
+	width: 45%;
+}
+
+#header .nav h1 {
+	float: left;
+	width: 200px;
+}
+
+/* 상단 로고 */
+.logo {
+	display: block;
+	background: no-repeat 0 0;
+	height: 55px;
+	margin-top: 17px;
+	/* margin-left: 260px; */
+	text-indent: -9999px;
+}
+
+.visual_section {
+	text-align: center;
+	position: relative;
+	background-image: './img/bg_visual_1200.png';
+}
+
+.main_visual {
+	position: auto;
+	text-align: center;
+}
+
+.bg_visual_1200 {
+	width: 1519px;
+	position: absolute;
+	left: 0;
+}
+
+#container {
+	width: 100%;
+}
+
+
+/* 테스트 */
+
+#header {
+	position: relative;
+	width: 100%;
+	background-color: #002b45;
+	height: 90px;
+}
+
+#header .nav {
+	margin: 0 auto;
+	width: 1000px;
+	overflow: hidden;
+}
+
+#header .nav h1 {
+	float: left;
+	width: 200px;
+}
+
+#header .nav h1 a {
+	display: block;
+	background: url(/ManageSites/TOPIAIT/images/common/h1_logo.png) no-repeat 0 0;
+	height: 55px;
+	margin-top: 17px;
+	text-indent: -9999px;
+}
+
+.gnb {
+	float: right;
+	height: 40px;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+}
+
+#header .nav .gnb a {
+	float: right;
+	height: 40px;
+	margin: 0 0 0px 0;
+	overflow: hidden;
+	width: 80px;
+}
+
+ul.gnb {
+	padding-right: 10px;
+}
+
+#header .nav .gnb li {
+	display: inline-block;
+}
+
+#header .nav .gnb li a {
+	display: block;
+	font-size: 11px;
+	color: #4393c9;
+	line-height: 40px;
+	text-transform: uppercase;
+	padding-left: 20px;
+	width: 100px;
+}
+
+#header .nav .gnb label {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px;
+	padding-left: 10px;
+	color: #4393c9;
+	font-size: 11px;
+}
+
+#header .nav .gnb input {
+	display: inline-block;
+	width: 80px;
+	vertical-align: middle;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 0 0 3px;
+	border: 0;
+	font-size: 11px;
+	background: #bbd8ec
+}
+
+#header .nav .gnb input:focus {
+	outline: none;
+	background-color: #c3dae8 !important;
+}
+
+#header .nav .gnb .user_info {
+	padding-left: 20px;
+	color: #bbd8ec
+}
+
+#header .nav .gnb .user_info strong {
+	font-weight: bold;
+	color: #fff;
+}
+
+#header .nav ul#topnav {
+	clear: right;
+	float: right;
+	width: 540px;
+	height: 50px;
+	margin: 0;
+	padding-left: 140px;
+	font-size: 0;
+	vertical-align: top
+}
+
+#header .nav ul#topnav li {
+	display: inline-block;
+	width: auto;
+}
+
+ul > li::after { float: right; color:#ccc; content: "|";  margin-top:-31px;}
+
+ul > li:last-child::after { content: ""; margin-right:0px; }
+
+#header .nav ul#topnav li a{
+	border-right:1px solid #4393c9;
+	display: block;
+	background: url(/ManageSites/TOPIAIT/images/common/bg_depth1_a.gif) no-repeat 0 0;
+	height: 23px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	font-family: '맑은고딕', malgun gothic, '돋움', Dotum;
+	letter-spacing: -1px;
+	width: 100px;
+}
+
+#header .nav ul#topnav li:last-child a {
+	border-right:none
+}
+
+#header .nav ul#topnav li:first-child a {
+	background-image: none;
+}
+
+#header .nav ul#topnav li.lst a {
+	padding-right: 0;
+}
+
+#header .nav ul#topnav li a:hover,
+#header .nav ul#topnav li a.on {
+	color: #8dc3e7;
+}
+
+#header .nav ul#topnav li .depth2 {
+	display: none;
+	position: absolute;
+	top: 89px;
+	left: 0;
+	width: 100%;
+	background-color: #77b1d8;
+	border-top: 1px solid #bbd8ec;
+	border-bottom: 1px solid #bbd8ec;
+	z-index: 9999;
+}
+
+#header .nav ul#topnav li .depth2 ul {
+	margin: 0 auto;
+	width: 1000px;
+	font-size: 0;
+	text-align: right;
+	box-sizing: border-box;
+}
+
+#header .nav ul#topnav li .depth2 ul li {
+	display: inline-block;
+	width: auto;
+	height: 40px;
+}
+
+#header .nav ul#topnav li .depth2 ul li a {
+	display: block;
+	background-image: none;
+	padding: 0 20px;
+	font-size: 12px;
+	height: 40px;
+	line-height: 40px;
+	color: #002b45;
+	font-family: '돋움', Dotum;
+	letter-spacing: 0
+}
+
+#header .nav ul#topnav li .depth2 ul li a:hover {
+	text-decoration: underline
+}
+
+/**** 1.회사소개 ****/
+#header .nav ul#topnav li .depth2 .menu001 {
+	padding-right: 18px;
+}
+
+/**** 2.사업분야****/
+#header .nav ul#topnav li .depth2 .menu002 {
+	padding-right: 170px;
+}
+
+/**** 3.솔루션 *****/
+#header .nav ul#topnav li .depth2 .menu003 {}
+
+/**** 4.파트너 ****/
+#header .nav ul#topnav li .depth2 .menu004 {
+	padding-right: 70px;
+}
+
+/**** 5.채용정보 ****/
+#header .nav ul#topnav li .depth2 .menu005 {
+	padding-right: 98px;
+}
+
+/**** 6.정보센터 ****/
+#header .nav ul#topnav li .depth2 .menu006 {}

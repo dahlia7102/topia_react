@@ -22,7 +22,7 @@ class TopMenuComponent extends Component {
                     </Navbar.Brand>
                 </Navbar>
                 <Switch>
-                    <Route exact path="/">Welcome</Route>
+                    <Route exact path="/"><h1>Welcome</h1></Route>
                     <Route path="/main" component={MainComponent} />
                     <Route path="/dashboard" component={DashboardComponent} />
                     <Route path="/">Not found</Route>
