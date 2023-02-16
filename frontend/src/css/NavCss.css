@@ -159,9 +159,10 @@ ul.gnb {
 	clear: right;
 	float: right;
 	width: 540px;
-	height: 50px;
+	height: 40px;
 	margin: 0;
 	padding-left: 140px;
+	padding-top: 10px;
 	font-size: 0;
 	vertical-align: top
 }
@@ -176,10 +177,10 @@ ul > li::after { float: right; color:#ccc; content: "|";  margin-top:-31px;}
 ul > li:last-child::after { content: ""; margin-right:0px; }
 
 #header .nav ul#topnav li a{
-	border-right:1px solid #4393c9;
+	
 	display: block;
 	background: url(/ManageSites/TOPIAIT/images/common/bg_depth1_a.gif) no-repeat 0 0;
-	height: 23px;
+	height: 30px;
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 15px;
@@ -189,6 +190,12 @@ ul > li:last-child::after { content: ""; margin-right:0px; }
 	letter-spacing: -1px;
 	width: 100px;
 }
+
+#header .nav ul#topnav li a{
+	border-right:1px solid #4393c9;
+	height: 23px;
+}
+
 
 #header .nav ul#topnav li:last-child a {
 	border-right:none

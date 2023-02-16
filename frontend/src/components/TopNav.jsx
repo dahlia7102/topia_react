@@ -4,6 +4,8 @@ import '../css/NavCss.css';
 import '../css/ExCss.css';
 
 class TopNav extends Component {
+
+     
     render() {
         return (
             <Router>
@@ -23,7 +25,7 @@ class TopNav extends Component {
                                 <a href="#" >가이드</a>
                                 <div class="depth2">
                                     <ul class="menu001">
-                                        <li><a href="#" onclick="viewRpt('박혁진')">박혁진</a></li>
+                                        <li><NavLink to="/testPage">박혁진</NavLink></li>
                                         <li><a href="#" onclick="viewRpt('조준희')">조준희</a></li>
                                         <li><a href="#" onclick="viewRpt('정봉현')">정봉현</a></li>
                                     </ul>
