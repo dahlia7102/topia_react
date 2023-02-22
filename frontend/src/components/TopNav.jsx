@@ -1,29 +1,28 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import '../css/NavCss.css';
 import '../css/ExCss.css';
 
-class TopNav extends Component {
-    render() {
+function TopNav() {
+     
         return (
-            <Router>
                 <div id="header">
                     <div class="nav">
-                        <NavLink class="navlink" to={"/"}>
+                        <Link to={"/"}>
                             <img class="logo" src={'./img/h1_logo.png'}></img>
-                        </NavLink>
+                        </Link>
 
                         <div>
                         <ul class="gnb">
-                            <NavLink class="pwd" to={"/"}>회원가입</NavLink>
-                            <NavLink class="id" to={"/"}>로그인</NavLink>
+                            <Link class="pwd" to={"/"}>회원가입</Link>
+                            <Link class="id" to={"/"}>로그인</Link>
                         </ul>
                         <ul id="topnav">
                             <li >
                                 <a href="#" >가이드</a>
                                 <div class="depth2">
                                     <ul class="menu001">
-                                        <li><a href="#" onclick="viewRpt('박혁진')">박혁진</a></li>
+                                        <li><Link to="/testPage">박혁진</Link></li>
                                         <li><a href="#" onclick="viewRpt('조준희')">조준희</a></li>
                                         <li><a href="#" onclick="viewRpt('정봉현')">정봉현</a></li>
                                     </ul>
@@ -67,9 +66,7 @@ class TopNav extends Component {
                         </div>
                     </div>
                 </div>
-            </Router>
         )
-    }
 }
 
 export default TopNav;
