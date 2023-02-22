@@ -4,10 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TopNav from './components/TopNav';
 import Bgvisual1200 from './components/Bg_Visual';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import TestPage from './pages/TestPage';
-// import MainComponent from './components/MainComponent';
-
-// import Sample from './components';
+import TestPage from './pages/TestPage';
 
 function App() {
   return (
@@ -20,7 +17,7 @@ function App() {
               <Bgvisual1200 />
             </Route>
             <Route path="/testPage" exact>
-              {/* <TestPage /> */}
+              <TestPage />
             </Route>
           </Switch>
       </div>

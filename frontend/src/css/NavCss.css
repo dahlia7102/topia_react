@@ -161,7 +161,7 @@ ul.gnb {
 	width: 540px;
 	height: 50px;
 	margin: 0;
-	padding-left: 140px;
+	/* padding-left: 140px; */
 	font-size: 0;
 	vertical-align: top
 }
@@ -176,10 +176,10 @@ ul > li::after { float: right; color:#ccc; content: "|";  margin-top:-31px;}
 ul > li:last-child::after { content: ""; margin-right:0px; }
 
 #header .nav ul#topnav li a{
-	border-right:1px solid #4393c9;
+	
 	display: block;
 	/* background: url(/ManageSites/TOPIAIT/images/common/bg_depth1_a.gif) no-repeat 0 0; */
-	height: 23px;
+	height: 50px;
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 15px;
@@ -190,7 +190,16 @@ ul > li:last-child::after { content: ""; margin-right:0px; }
 	width: 100px;
 }
 
+#header .nav ul#topnav li {
+	border-right:1px solid #4393c9;
+	height: 20px;
+}
+
 #header .nav ul#topnav li:last-child a {
+	border-right:none
+}
+
+#header .nav ul#topnav li:last-child {
 	border-right:none
 }
 
@@ -231,6 +240,7 @@ ul > li:last-child::after { content: ""; margin-right:0px; }
 	display: inline-block;
 	width: auto;
 	height: 40px;
+	border-right:none;
 }
 
 #header .nav ul#topnav li .depth2 ul li a {
@@ -242,7 +252,7 @@ ul > li:last-child::after { content: ""; margin-right:0px; }
 	line-height: 40px;
 	color: #002b45;
 	font-family: '돋움', Dotum;
-	letter-spacing: 0
+	letter-spacing: 0;
 }
 
 #header .nav ul#topnav li .depth2 ul li a:hover {
@@ -251,7 +261,7 @@ ul > li:last-child::after { content: ""; margin-right:0px; }
 
 /**** 1.회사소개 ****/
 #header .nav ul#topnav li .depth2 .menu001 {
-	padding-right: 18px;
+	padding-right: 170px;
 }
 
 /**** 2.사업분야****/
