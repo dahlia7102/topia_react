@@ -3,12 +3,19 @@ import axios from "axios";
 
 const TestPage = () => {
     const [message, setMessege] = useState([]);
+    const [data, setData] = useState([]);
+
     
     useEffect( () => {
         axios.get('/testPage')
         // axios.get('https://jsonplaceholder.typicode.com/users')
             .then(res => {
-                console.log(res.data);
+                let dataArr = [];
+
+                dataArr = res.data.data;
+                console.log(dataArr);
+
+                setData(dataArr[0].WRITER);
                 setMessege(res.data.message);
     
             }).catch(console.error);
@@ -35,6 +42,8 @@ const TestPage = () => {
                 <br/>
                 <h1>TEST PAGE</h1>
                 message : {message}<br/>
+                data : {data}<br/>
+                data : {data}<br/>
             </div>
     )
 }

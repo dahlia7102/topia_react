@@ -18,8 +18,8 @@ public class TestController {
     public Map<String, Object> test() {
         Map<String, Object> req = new HashMap<String, Object>();
         Map<String, Object> reqMap = new HashMap<String, Object>();
-        
-        req.put("data", reqMap);
+
+        req.put("data", service.selectList());
         req.put("message", "성공");
 
         return req;
