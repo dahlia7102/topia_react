@@ -1,14 +1,36 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+import { DataGrid } from "@material-ui/data-grid";
 
 const TestPage = () => {
     const [message, setMessege] = useState([]);
     const [data, setData] = useState([]);
 
+    //test
+    // const columnData = useMemo(() => columns, [columns]);
+    // const rowData = useMemo(() => rows, [rows]);
+
+    const columns = [
+        { field: "id", headerName: "ID", width: 90 },
+        {
+          field: "orderDate",
+          headerName: "오더등록일",
+          width: 150,
+          type: "number",
+          editable: true,
+        },
+      ];
+
+      const rows = [
+        {
+          id: "1",
+          orderDate: "2021-12-03",
+        },
+      ];
+
     
     useEffect( () => {
         axios.get('/testPage')
-        // axios.get('https://jsonplaceholder.typicode.com/users')
             .then(res => {
                 let dataArr = [];
 
@@ -19,23 +41,11 @@ const TestPage = () => {
                 setMessege(res.data.message);
     
             }).catch(console.error);
-        // await axios({
-        //     method: 'get',
-        //     header: { 'content-type': 'application/json' },
-        //     url: 'http://localhost:8080/api/testPage',
-        // })
-        // .then(function (res) {
-        //      console.log(res.data);
-        //      setMessege(res.data.message);
-        // })
-        // .catch(function (err) {
-        // console.log(err);
-        // });
-
     },[]);
 
 
     return (
+        <>
             <div>
                 <br/>
                 <br/>
@@ -45,6 +55,22 @@ const TestPage = () => {
                 data : {data}<br/>
                 data : {data}<br/>
             </div>
+
+            <br />
+            <div style={{ height: 400, width: "100%" }}>
+            <DataGrid
+                rows={rows}
+                columns={columns}
+                pageSize={5}
+                rowsPerPageOptions={[5]}
+                checkboxSelection
+                disableSelectionOnClick
+                // isRowSelectable={(params: any) => params.row.OrderAmount > 1}
+            />
+    </div>
+            
+        </>    
+
     )
 }
 
